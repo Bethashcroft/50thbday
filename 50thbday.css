@@ -1,0 +1,61 @@
+#monthlist {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+  align-items: center;
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+}
+
+#onehead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+#twohead {
+  margin: 0;
+}
+
+.mealout {
+  width: 10%;
+  height: auto;
+}
+
+.king,
+.street {
+  width: 10%;
+}
+
+.ireland,
+.marchdate {
+  width: 20%;
+}
+
+.budapest {
+  width: 30%;
+}
+
+.man,
+.ford,
+.camping {
+  width: 30%;
+}
+
+.ford {
+  height: 60%;
+}
+
+.car,
+.lancaster,
+.bomber {
+  width: 30%;
+}
+
+.cruise,
+.london,
+.fireworks {
+  width: 50%;
+}
