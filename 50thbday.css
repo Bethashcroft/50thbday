@@ -1,3 +1,33 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+img {
+  border: solid 2px #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  width: 25em;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container img {
+  width: 100%;
+}
+
+.container h1 {
+  font-size: 24pt;
+  font-weight: 600;
+}
+
 #monthlist {
   font-family: Arial, Helvetica, sans-serif;
   padding: 1em;
@@ -7,55 +37,62 @@
   background-color: cornflowerblue;
   display: flex;
   flex-direction: column;
-  width: 25em;
+  width: 25vw;
+  gap: 1em;
 }
 
-#onehead {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
+.monthLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
 }
 
-#twohead {
+.monthLinks a,
+.monthBtn {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1em;
+  border: solid 1px #00000060;
+  width: 5em;
+  background-color: #ffffff10;
+  transition: all 0.3s ease-in-out;
+}
+
+.monthLinks a:hover,
+.monthBtn:hover {
+  background-color: #ffffff25;
+}
+
+h2 {
   margin: 0;
 }
 
-.mealout {
-  width: 10%;
-  height: auto;
+.twoPhotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 
-.king,
-.street {
-  width: 10%;
-}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  #monthList {
+    width: 90%;
+  }
 
-.ireland,
-.marchdate {
-  width: 20%;
-}
+  .container img {
+    width: 90%;
+  }
 
-.budapest {
-  width: 30%;
-}
+  .container h1 {
+    margin-bottom: 0;
+  }
 
-.man,
-.ford,
-.camping {
-  width: 30%;
-}
-
-.ford {
-  height: 60%;
-}
-
-.car,
-.lancaster,
-.bomber {
-  width: 30%;
-}
-
-.cruise,
-.london,
-.fireworks {
-  width: 50%;
+  .monthLinks a {
+    width: 90%;
+  }
 }
